@@ -1,9 +1,9 @@
 .mug {
-  width: 80px;
+  width: 100px;
   height: 120px;
   position: relative;
-  opacity: 1;
-  margin: 30px auto;
+  margin: 20px auto;
+  overflow: visible;
 
   .handle {
     width: 20px;
@@ -11,21 +11,17 @@
     position: absolute;
     top: 20px;
     left: 105%;
-    border-top-right-radius: 10px;
-    border-bottom-right-radius: 10px;
-    border-top: 12px solid rgba(225, 235, 240, 1);
-    border-right: 12px solid rgba(225, 235, 240, 1);
-    border-bottom: 12px solid rgba(225, 235, 240, 1);
-  }
-
-  .glass {
-    opacity: 0.8;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    border-top: 8px solid $black;
+    border-right: 8px solid $black;
+    border-bottom: 8px solid $black;
   }
 
   .body {
     width: 100%;
     height: 100%;
-    background-color: rgba(225, 235, 240, 1);
+    background-color: $black;
     border: 5px solid transparent;
     position: absolute;
     left: 0;
@@ -33,21 +29,20 @@
     margin-left: -5px;
     margin-bottom: -5px;
     overflow: hidden;
-    border-bottom-left-radius: 15px;
-    border-bottom-right-radius: 15px;
+    border-radius: 3px 3px 30px 30px;
     box-sizing: content-box;
   }
 
   .contents {
     width: 100%;
     height: 80%;
-    background-color: rgba(241, 142, 28, 0.8);
+    background-color: $beer;
     position: absolute;
     bottom: 0;
     left: 0;
     z-index: 1;
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
 
     .fizz {
       position: absolute;
@@ -55,8 +50,8 @@
       margin-left: 6px;
 
       div {
-        width: 4px;
-        height: 4px;
+        width: 8px;
+        height: 8px;
         border-radius: 4px;
         position: absolute;
         margin-top: 130px;
@@ -68,32 +63,32 @@
 
   .contents .fizz div:nth-of-type(1) {
     margin-left: 4px;
-    animation: bubblebubble 2.5s linear 0.5s infinite normal forwards;
-    -webkit-animation: bubblebubble 2.5s linear 0.5s infinite normal forwards;
+    animation: bubblebubble 3.5s linear 0.5s infinite normal forwards;
+    -webkit-animation: bubblebubble 3.5s linear 0.5s infinite normal forwards;
   }
 
   .contents .fizz div:nth-of-type(2) {
     margin-left: 13px;
-    animation: bubblebubble 2.45s linear 0s infinite normal forwards;
-    -webkit-animation: bubblebubble 2.45s linear 0s infinite normal forwards;
+    animation: bubblebubble 3.45s linear 0s infinite normal forwards;
+    -webkit-animation: bubblebubble 3.45s linear 0s infinite normal forwards;
   }
 
   .contents .fizz div:nth-of-type(3) {
     margin-left: 22px;
-    animation: bubblebubble 2.35s linear 0.8s infinite normal forwards;
-    -webkit-animation: bubblebubble 2.35s linear 0.8s infinite normal forwards;
+    animation: bubblebubble 3.35s linear 0.8s infinite normal forwards;
+    -webkit-animation: bubblebubble 3.35s linear 0.8s infinite normal forwards;
   }
 
   .contents .fizz div:nth-of-type(4) {
     margin-left: 30px;
-    animation: bubblebubble 2.45s linear 0.5s infinite normal forwards;
-    -webkit-animation: bubblebubble 2.45s linear 0.5s infinite normal forwards;
+    animation: bubblebubble 3.45s linear 0.5s infinite normal forwards;
+    -webkit-animation: bubblebubble 3.45s linear 0.5s infinite normal forwards;
   }
 
   .contents .fizz div:nth-of-type(5) {
     margin-left: 39px;
-    animation: bubblebubble 2.5s linear 2s infinite normal forwards;
-    -webkit-animation: bubblebubble 2.5s linear 2s infinite normal forwards;
+    animation: bubblebubble 3.5s linear 2s infinite normal forwards;
+    -webkit-animation: bubblebubble 3.5s linear 2s infinite normal forwards;
   }
 
   .contents .fizz div:nth-of-type(6) {
@@ -116,11 +111,11 @@
     top: 0;
     margin-top: -35px;
     left: 0;
-    opacity: 0.65;
+    opacity: 1;
   }
 
   .contents .foam div {
-    background-color: rgba(241, 206, 152, 1);
+    background-color: $foam;
     position: absolute;
     border-radius: 25px;
     width: 30px;
@@ -172,6 +167,26 @@
     margin-top: 15px;
     animation: bubble 6.15s ease-in-out 0.6s infinite alternate none;
     -webkit-animation: bubble 6.15s ease-in-out 0.6s infinite alternate none;
+  }
+
+  .line {
+    div {
+    height: 5px;
+    border-radius: 5px;
+    background-color: $black;
+    position: absolute;
+    top: 0;
+    margin-top: 120px;
+
+    }
+    div:nth-of-type(1) {
+      margin-left: -35px;
+     width: 15px;
+    }
+    div:nth-of-type(2) {
+      margin-left: -10px;
+     width: 140px;
+    }
   }
 
 }

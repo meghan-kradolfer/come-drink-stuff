@@ -548,48 +548,61 @@ td,
 th {
   padding: 0; }
 
+a {
+  color: inherit; }
+
 * {
   box-sizing: border-box; }
 
 html {
-  background-color: #000000; }
+  background-color: #f4f4f4; }
 
 html, body {
   height: 100%; }
 
-h1, h2 {
+h1 {
+  font-family: "Helvetica", Helvetica, Arial, sans-serif;
+  font-weight: 600;
+  color: rgba(47, 47, 47, 0.98);
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 20px;
+  letter-spacing: 3px;
+  padding: 0;
+  margin: 0; }
+
+h2 {
   font-family: "Helvetica", Helvetica, Arial, sans-serif;
   font-weight: 200;
-  color: #FFFAF4;
+  color: rgba(47, 47, 47, 0.98);
+  text-transform: uppercase;
   text-align: center;
-  font-size: 14px;
-  letter-spacing: 3px;
-  padding: 2px 0;
+  font-size: 16px;
+  letter-spacing: 4px;
+  padding: 5px 0;
   margin: 0; }
 
 .mug {
-  width: 80px;
+  width: 100px;
   height: 120px;
   position: relative;
-  opacity: 1;
-  margin: 30px auto; }
+  margin: 20px auto;
+  overflow: visible; }
   .mug .handle {
     width: 20px;
     height: 55px;
     position: absolute;
     top: 20px;
     left: 105%;
-    border-top-right-radius: 10px;
-    border-bottom-right-radius: 10px;
-    border-top: 12px solid #e1ebf0;
-    border-right: 12px solid #e1ebf0;
-    border-bottom: 12px solid #e1ebf0; }
-  .mug .glass {
-    opacity: 0.8; }
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    border-top: 8px solid rgba(47, 47, 47, 0.98);
+    border-right: 8px solid rgba(47, 47, 47, 0.98);
+    border-bottom: 8px solid rgba(47, 47, 47, 0.98); }
   .mug .body {
     width: 100%;
     height: 100%;
-    background-color: #e1ebf0;
+    background-color: rgba(47, 47, 47, 0.98);
     border: 5px solid transparent;
     position: absolute;
     left: 0;
@@ -597,26 +610,25 @@ h1, h2 {
     margin-left: -5px;
     margin-bottom: -5px;
     overflow: hidden;
-    border-bottom-left-radius: 15px;
-    border-bottom-right-radius: 15px;
+    border-radius: 3px 3px 30px 30px;
     box-sizing: content-box; }
   .mug .contents {
     width: 100%;
     height: 80%;
-    background-color: rgba(241, 142, 28, 0.8);
+    background-color: #F6B868;
     position: absolute;
     bottom: 0;
     left: 0;
     z-index: 1;
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px; }
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px; }
     .mug .contents .fizz {
       position: absolute;
       margin-top: -45px;
       margin-left: 6px; }
       .mug .contents .fizz div {
-        width: 4px;
-        height: 4px;
+        width: 8px;
+        height: 8px;
         border-radius: 4px;
         position: absolute;
         margin-top: 130px;
@@ -624,24 +636,24 @@ h1, h2 {
         opacity: 0; }
   .mug .contents .fizz div:nth-of-type(1) {
     margin-left: 4px;
-    animation: bubblebubble 2.5s linear 0.5s infinite normal forwards;
-    -webkit-animation: bubblebubble 2.5s linear 0.5s infinite normal forwards; }
+    animation: bubblebubble 3.5s linear 0.5s infinite normal forwards;
+    -webkit-animation: bubblebubble 3.5s linear 0.5s infinite normal forwards; }
   .mug .contents .fizz div:nth-of-type(2) {
     margin-left: 13px;
-    animation: bubblebubble 2.45s linear 0s infinite normal forwards;
-    -webkit-animation: bubblebubble 2.45s linear 0s infinite normal forwards; }
+    animation: bubblebubble 3.45s linear 0s infinite normal forwards;
+    -webkit-animation: bubblebubble 3.45s linear 0s infinite normal forwards; }
   .mug .contents .fizz div:nth-of-type(3) {
     margin-left: 22px;
-    animation: bubblebubble 2.35s linear 0.8s infinite normal forwards;
-    -webkit-animation: bubblebubble 2.35s linear 0.8s infinite normal forwards; }
+    animation: bubblebubble 3.35s linear 0.8s infinite normal forwards;
+    -webkit-animation: bubblebubble 3.35s linear 0.8s infinite normal forwards; }
   .mug .contents .fizz div:nth-of-type(4) {
     margin-left: 30px;
-    animation: bubblebubble 2.45s linear 0.5s infinite normal forwards;
-    -webkit-animation: bubblebubble 2.45s linear 0.5s infinite normal forwards; }
+    animation: bubblebubble 3.45s linear 0.5s infinite normal forwards;
+    -webkit-animation: bubblebubble 3.45s linear 0.5s infinite normal forwards; }
   .mug .contents .fizz div:nth-of-type(5) {
     margin-left: 39px;
-    animation: bubblebubble 2.5s linear 2s infinite normal forwards;
-    -webkit-animation: bubblebubble 2.5s linear 2s infinite normal forwards; }
+    animation: bubblebubble 3.5s linear 2s infinite normal forwards;
+    -webkit-animation: bubblebubble 3.5s linear 2s infinite normal forwards; }
   .mug .contents .fizz div:nth-of-type(6) {
     margin-left: 47px;
     animation: bubblebubble 2.6s linear 0.5s infinite normal forwards;
@@ -658,9 +670,9 @@ h1, h2 {
     top: 0;
     margin-top: -35px;
     left: 0;
-    opacity: 0.65; }
+    opacity: 1; }
   .mug .contents .foam div {
-    background-color: #f1ce98;
+    background-color: #F9DF8A;
     position: absolute;
     border-radius: 25px;
     width: 30px;
@@ -698,10 +710,33 @@ h1, h2 {
     margin-top: 15px;
     animation: bubble 6.15s ease-in-out 0.6s infinite alternate none;
     -webkit-animation: bubble 6.15s ease-in-out 0.6s infinite alternate none; }
+  .mug .line div {
+    height: 5px;
+    border-radius: 5px;
+    background-color: rgba(47, 47, 47, 0.98);
+    position: absolute;
+    top: 0;
+    margin-top: 120px; }
+  .mug .line div:nth-of-type(1) {
+    margin-left: -35px;
+    width: 15px; }
+  .mug .line div:nth-of-type(2) {
+    margin-left: -10px;
+    width: 140px; }
 
 .home {
   position: absolute;
   top: 50%;
   left: 0;
   right: 0;
-  margin: -70px auto 0 auto; }
+  margin: -120px auto 0 auto; }
+  .home .social {
+    text-align: center;
+    color: rgba(47, 47, 47, 0.98);
+    margin-top: 10px; }
+    .home .social i {
+      font-size: 20px;
+      padding: 0 12px;
+      cursor: pointer; }
+      .home .social i:hover {
+        color: #F6B868; }
