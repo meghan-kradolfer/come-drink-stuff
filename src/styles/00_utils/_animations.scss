@@ -1,17 +1,17 @@
 @keyframes bubble {
-	100% { -webkit-transform: translate(-3px , 4px ); -moz-transform: translate(-3px , 4px ); -ms-transform: translate(-3px , 4px ); -o-transform: translate(-3px , 4px ); transform: translate(-3px , 4px );}
-	75% { -webkit-transform: translate(5px , -2px ); -moz-transform: translate(5px , -2px ); -ms-transform: translate(5px , -2px ); -o-transform: translate(5px , -2px ); transform: translate(5px , -2px );}
-	50% { -webkit-transform: translate(-3px , 1px ); -moz-transform: translate(-3px , 1px ); -ms-transform: translate(-3px , 1px ); -o-transform: translate(-3px , 1px ); transform: translate(-3px , 1px );}
-	25% { -webkit-transform: translate(3px , 4px ); -moz-transform: translate(3px , 4px ); -ms-transform: translate(3px , 4px ); -o-transform: translate(3px , 4px ); transform: translate(3px , 4px );}
-	0% { -webkit-transform: translate(-5px , -2px ); -moz-transform: translate(-5px , -2px ); -ms-transform: translate(-5px , -2px ); -o-transform: translate(-5px , -2px ); transform: translate(-5px , -2px );}
+	100% { -webkit-transform: translate(-1px , 2px ); -moz-transform: translate(-1px , 2px ); -ms-transform: translate(-1px , 2px ); -o-transform: translate(-1px , 2px ); transform: translate(-1px , 2px );}
+	75% { -webkit-transform: translate(3px , -2px ); -moz-transform: translate(3px , -2px ); -ms-transform: translate(3px , -2px ); -o-transform: translate(3px , -2px ); transform: translate(3px , -2px );}
+	50% { -webkit-transform:  translate(-1px , 1px ); -moz-transform:  translate(-1px , 1px ); -ms-transform:  translate(-1px , 1px ); -o-transform:  translate(-1px , 1px ); transform: translate(-1px , 1px );}
+	25% { -webkit-transform: translate(1px , 2px ); -moz-transform: translate(1px , 2px ); -ms-transform: translate(1px , 2px ); -o-transform: translate(1px , 2px ); transform: translate(1px , 2px );}
+	0% { -webkit-transform: translate(-1px , -2px ); -moz-transform: translate(-1px , -2px ); -ms-transform: translate(-1px , -2px ); -o-transform: translate(-1px , -2px ); transform: translate(-1px , -2px );}
 }
 
 @-webkit-keyframes bubble {
-	100% { -webkit-transform: translate(-3px , 4px ); -moz-transform: translate(-3px , 4px ); -ms-transform: translate(-3px , 4px ); -o-transform: translate(-3px , 4px ); transform: translate(-3px , 4px );}
-	75% { -webkit-transform: translate(5px , -2px ); -moz-transform: translate(5px , -2px ); -ms-transform: translate(5px , -2px ); -o-transform: translate(5px , -2px ); transform: translate(5px , -2px );}
-	50% { -webkit-transform: translate(-3px , 1px ); -moz-transform: translate(-3px , 1px ); -ms-transform: translate(-3px , 1px ); -o-transform: translate(-3px , 1px ); transform: translate(-3px , 1px );}
-	25% { -webkit-transform: translate(3px , 4px ); -moz-transform: translate(3px , 4px ); -ms-transform: translate(3px , 4px ); -o-transform: translate(3px , 4px ); transform: translate(3px , 4px );}
-	0% { -webkit-transform: translate(-5px , -2px ); -moz-transform: translate(-5px , -2px ); -ms-transform: translate(-5px , -2px ); -o-transform: translate(-5px , -2px ); transform: translate(-5px , -2px );}
+	100% { -webkit-transform: translate(-1px , 2px ); -moz-transform: translate(-1px , 2px ); -ms-transform: translate(-1px , 2px ); -o-transform: translate(-1px , 2px ); transform: translate(-1px , 2px );}
+	75% { -webkit-transform: translate(3px , -2px ); -moz-transform: translate(3px , -2px ); -ms-transform: translate(3px , -2px ); -o-transform: translate(3px , -2px ); transform: translate(3px , -2px );}
+	50% { -webkit-transform:  translate(-1px , 1px ); -moz-transform:  translate(-1px , 1px ); -ms-transform:  translate(-1px , 1px ); -o-transform:  translate(-1px , 1px ); transform: translate(-1px , 1px );}
+	25% { -webkit-transform: translate(1px , 2px ); -moz-transform: translate(1px , 2px ); -ms-transform: translate(1px , 2px ); -o-transform: translate(1px , 2px ); transform: translate(1px , 2px );}
+	0% { -webkit-transform: translate(-1px , -2px ); -moz-transform: translate(-1px , -2px ); -ms-transform: translate(-1px , -2px ); -o-transform: translate(-1px , -2px ); transform: translate(-1px , -2px );}
 }
 
 @keyframes bubblebubble {

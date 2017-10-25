@@ -1,35 +1,37 @@
+$mug-height: 70px;
+$mug-width: 60px;
+
 .mug {
-  width: 100px;
-  height: 120px;
+  width: $mug-width;
+  height: $mug-height;
   position: relative;
-  margin: 20px auto;
   overflow: visible;
 
   .handle {
-    width: 20px;
-    height: 55px;
+    width: $mug-height * 0.16;
+    height: $mug-height * 0.5;
     position: absolute;
-    top: 20px;
+    top: $mug-height * 0.2;
     left: 105%;
-    border-top-right-radius: 15px;
-    border-bottom-right-radius: 15px;
-    border-top: 8px solid $black;
-    border-right: 8px solid $black;
-    border-bottom: 8px solid $black;
+    border-top-right-radius: $mug-width * 0.15;
+    border-bottom-right-radius: $mug-width * 0.15;
+    border-top: $mug-width * 0.08 solid $black;
+    border-right: $mug-width * 0.08 solid $black;
+    border-bottom: $mug-width * 0.08 solid $black;
   }
 
   .body {
     width: 100%;
     height: 100%;
     background-color: $black;
-    border: 5px solid transparent;
+    border: $mug-width * 0.05 solid transparent;
     position: absolute;
     left: 0;
     bottom: 0;
-    margin-left: -5px;
-    margin-bottom: -5px;
+    margin-left: -$mug-width * 0.05;
+    margin-bottom: -$mug-width * 0.05;
     overflow: hidden;
-    border-radius: 3px 3px 30px 30px;
+    border-radius: ($mug-width * 0.03) ($mug-width * 0.03) ($mug-width * 0.3) ($mug-width * 0.3);
     box-sizing: content-box;
   }
 
@@ -41,75 +43,75 @@
     bottom: 0;
     left: 0;
     z-index: 1;
-    border-bottom-left-radius: 25px;
-    border-bottom-right-radius: 25px;
+    border-bottom-left-radius: $mug-width * 0.25;
+    border-bottom-right-radius: $mug-width * 0.25;
 
     .fizz {
       position: absolute;
-      margin-top: -45px;
-      margin-left: 6px;
+      margin-top: -$mug-height * 0.15;
+      margin-left: $mug-width * 0.06;
 
       div {
-        width: 8px;
-        height: 8px;
-        border-radius: 4px;
+        width: $mug-width * 0.08;
+        height: $mug-width * 0.08;
+        border-radius: $mug-width * 0.04;
         position: absolute;
-        margin-top: 130px;
-        border: 2px solid rgba(255, 255, 255, 1);
+        margin-top: $mug-height - 10;
+        border: $mug-width * 0.02 solid rgba(255, 255, 255, 1);
         opacity: 0;
       }
     }
   }
 
   .contents .fizz div:nth-of-type(1) {
-    margin-left: 4px;
+    margin-left: $mug-width * 0.04;
     animation: bubblebubble 3.5s linear 0.5s infinite normal forwards;
     -webkit-animation: bubblebubble 3.5s linear 0.5s infinite normal forwards;
   }
 
   .contents .fizz div:nth-of-type(2) {
-    margin-left: 13px;
+    margin-left: $mug-width * 0.13;
     animation: bubblebubble 3.45s linear 0s infinite normal forwards;
     -webkit-animation: bubblebubble 3.45s linear 0s infinite normal forwards;
   }
 
   .contents .fizz div:nth-of-type(3) {
-    margin-left: 22px;
+    margin-left: $mug-width * 0.22;
     animation: bubblebubble 3.35s linear 0.8s infinite normal forwards;
     -webkit-animation: bubblebubble 3.35s linear 0.8s infinite normal forwards;
   }
 
   .contents .fizz div:nth-of-type(4) {
-    margin-left: 30px;
+    margin-left: $mug-width * 0.3;
     animation: bubblebubble 3.45s linear 0.5s infinite normal forwards;
     -webkit-animation: bubblebubble 3.45s linear 0.5s infinite normal forwards;
   }
 
   .contents .fizz div:nth-of-type(5) {
-    margin-left: 39px;
+    margin-left: $mug-width * 0.39;
     animation: bubblebubble 3.5s linear 2s infinite normal forwards;
     -webkit-animation: bubblebubble 3.5s linear 2s infinite normal forwards;
   }
 
   .contents .fizz div:nth-of-type(6) {
-    margin-left: 47px;
+    margin-left: $mug-width * 0.47;
     animation: bubblebubble 2.6s linear 0.5s infinite normal forwards;
     -webkit-animation: bubblebubble 2.6s linear 0.5s infinite normal forwards;
   }
 
   .contents .fizz div:nth-of-type(7) {
-    margin-left: 55px;
+    margin-left: $mug-width * 0.55;
     animation: bubblebubble 2.5s linear 1.5s infinite normal forwards;
     -webkit-animation: bubblebubble 2.5s linear 1.5s infinite normal forwards;
   }
 
   .contents .foam {
     width: 100%;
-    height: 35px;
+    height: $mug-height * 0.29;
     overflow: hidden;
     position: absolute;
     top: 0;
-    margin-top: -35px;
+    margin-top: -$mug-height * 0.29;
     left: 0;
     opacity: 1;
   }
@@ -117,75 +119,75 @@
   .contents .foam div {
     background-color: $foam;
     position: absolute;
-    border-radius: 25px;
-    width: 30px;
-    height: 30px;
+    border-radius: $mug-width * 0.25;
+    width: $mug-width * 0.3;
+    height: $mug-width * 0.3;
   }
 
   .contents .foam div:nth-of-type(even) {
-    left: -15px;
-    top: 10px;
-    width: 40px;
-    height: 40px;
+    left: -$mug-width * 0.15;
+    top: $mug-width * 0.1;
+    width: $mug-width * 0.4;
+    height: $mug-width * 0.4;
   }
 
   .contents .foam div:nth-of-type(odd) {
-    left: -5px;
+    left: -$mug-width * 0.05;
     top: 0;
   }
 
   .contents .foam div:nth-of-type(5n+1) {
-    margin-left: 0%;
-    margin-top: 15px;
+    margin-left: 0;
+    margin-top: $mug-width * 0.15;
     animation: bubble 6.5s ease-in-out 0.2s infinite alternate none;
     -webkit-animation: bubble 6.5s ease-in-out 0.2s infinite alternate none;
   }
 
   .contents .foam div:nth-of-type(5n+2) {
     margin-left: 25%;
-    margin-top: 15px;
+    margin-top: $mug-width * 0.15;
     animation: bubble 6.2s ease-in-out 0.1s infinite alternate none;
     -webkit-animation: bubble 6.2s ease-in-out 0.1s infinite alternate none;
   }
 
   .contents .foam div:nth-of-type(5n+3) {
     margin-left: 50%;
-    margin-top: 15px;
+    margin-top: $mug-width * 0.15;
     animation: bubble 6.5s ease-in-out 0s infinite alternate none;
     -webkit-animation: bubble 6.5s ease-in-out 0s infinite alternate none;
   }
 
   .contents .foam div:nth-of-type(5n+4) {
     margin-left: 75%;
-    margin-top: 15px;
+    margin-top: $mug-width * 0.15;
     animation: bubble 6.6s ease-in-out 0s infinite alternate none;
     -webkit-animation: bubble 6.6s ease-in-out 0s infinite alternate none;
   }
 
   .contents .foam div:nth-of-type(5n+5) {
     margin-left: 100%;
-    margin-top: 15px;
+    margin-top: $mug-width * 0.15;
     animation: bubble 6.15s ease-in-out 0.6s infinite alternate none;
     -webkit-animation: bubble 6.15s ease-in-out 0.6s infinite alternate none;
   }
 
   .line {
     div {
-    height: 5px;
-    border-radius: 5px;
+    height: $mug-width * 0.05;
+    border-radius: $mug-width * 0.05;
     background-color: $black;
     position: absolute;
     top: 0;
-    margin-top: 120px;
+    margin-top: $mug-height;
 
     }
     div:nth-of-type(1) {
-      margin-left: -35px;
-     width: 15px;
+     margin-left: -$mug-width * 0.35;
+     width: $mug-width * 0.15;
     }
     div:nth-of-type(2) {
-      margin-left: -10px;
-     width: 140px;
+      margin-left: -$mug-width * 0.1;
+     width: $mug-width * 1.4;
     }
   }
 

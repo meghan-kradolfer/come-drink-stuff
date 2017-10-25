@@ -1,22 +1,10 @@
 .home {
-  position: absolute;
-  top: 50%;
-  left: 0 ;
-  right: 0;
-  margin: -120px auto 0 auto;
+  background-color: $black;
 
-  .social {
+  h1 {
+    color: $white;
+    padding: 10rem 0;
     text-align: center;
-    color: $black;
-    margin-top: 10px;
-
-    i {
-      font-size: 20px;
-      padding:0 12px;
-      cursor: pointer;
-      &:hover {
-        color: $beer;
-      }
-    }
   }
+
 }

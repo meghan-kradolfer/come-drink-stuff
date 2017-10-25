@@ -1,66 +1,66 @@
 @keyframes bubble {
   100% {
-    -webkit-transform: translate(-3px, 4px);
-    -moz-transform: translate(-3px, 4px);
-    -ms-transform: translate(-3px, 4px);
-    -o-transform: translate(-3px, 4px);
-    transform: translate(-3px, 4px); }
+    -webkit-transform: translate(-1px, 2px);
+    -moz-transform: translate(-1px, 2px);
+    -ms-transform: translate(-1px, 2px);
+    -o-transform: translate(-1px, 2px);
+    transform: translate(-1px, 2px); }
   75% {
-    -webkit-transform: translate(5px, -2px);
-    -moz-transform: translate(5px, -2px);
-    -ms-transform: translate(5px, -2px);
-    -o-transform: translate(5px, -2px);
-    transform: translate(5px, -2px); }
+    -webkit-transform: translate(3px, -2px);
+    -moz-transform: translate(3px, -2px);
+    -ms-transform: translate(3px, -2px);
+    -o-transform: translate(3px, -2px);
+    transform: translate(3px, -2px); }
   50% {
-    -webkit-transform: translate(-3px, 1px);
-    -moz-transform: translate(-3px, 1px);
-    -ms-transform: translate(-3px, 1px);
-    -o-transform: translate(-3px, 1px);
-    transform: translate(-3px, 1px); }
+    -webkit-transform: translate(-1px, 1px);
+    -moz-transform: translate(-1px, 1px);
+    -ms-transform: translate(-1px, 1px);
+    -o-transform: translate(-1px, 1px);
+    transform: translate(-1px, 1px); }
   25% {
-    -webkit-transform: translate(3px, 4px);
-    -moz-transform: translate(3px, 4px);
-    -ms-transform: translate(3px, 4px);
-    -o-transform: translate(3px, 4px);
-    transform: translate(3px, 4px); }
+    -webkit-transform: translate(1px, 2px);
+    -moz-transform: translate(1px, 2px);
+    -ms-transform: translate(1px, 2px);
+    -o-transform: translate(1px, 2px);
+    transform: translate(1px, 2px); }
   0% {
-    -webkit-transform: translate(-5px, -2px);
-    -moz-transform: translate(-5px, -2px);
-    -ms-transform: translate(-5px, -2px);
-    -o-transform: translate(-5px, -2px);
-    transform: translate(-5px, -2px); } }
+    -webkit-transform: translate(-1px, -2px);
+    -moz-transform: translate(-1px, -2px);
+    -ms-transform: translate(-1px, -2px);
+    -o-transform: translate(-1px, -2px);
+    transform: translate(-1px, -2px); } }
 
 @-webkit-keyframes bubble {
   100% {
-    -webkit-transform: translate(-3px, 4px);
-    -moz-transform: translate(-3px, 4px);
-    -ms-transform: translate(-3px, 4px);
-    -o-transform: translate(-3px, 4px);
-    transform: translate(-3px, 4px); }
+    -webkit-transform: translate(-1px, 2px);
+    -moz-transform: translate(-1px, 2px);
+    -ms-transform: translate(-1px, 2px);
+    -o-transform: translate(-1px, 2px);
+    transform: translate(-1px, 2px); }
   75% {
-    -webkit-transform: translate(5px, -2px);
-    -moz-transform: translate(5px, -2px);
-    -ms-transform: translate(5px, -2px);
-    -o-transform: translate(5px, -2px);
-    transform: translate(5px, -2px); }
+    -webkit-transform: translate(3px, -2px);
+    -moz-transform: translate(3px, -2px);
+    -ms-transform: translate(3px, -2px);
+    -o-transform: translate(3px, -2px);
+    transform: translate(3px, -2px); }
   50% {
-    -webkit-transform: translate(-3px, 1px);
-    -moz-transform: translate(-3px, 1px);
-    -ms-transform: translate(-3px, 1px);
-    -o-transform: translate(-3px, 1px);
-    transform: translate(-3px, 1px); }
+    -webkit-transform: translate(-1px, 1px);
+    -moz-transform: translate(-1px, 1px);
+    -ms-transform: translate(-1px, 1px);
+    -o-transform: translate(-1px, 1px);
+    transform: translate(-1px, 1px); }
   25% {
-    -webkit-transform: translate(3px, 4px);
-    -moz-transform: translate(3px, 4px);
-    -ms-transform: translate(3px, 4px);
-    -o-transform: translate(3px, 4px);
-    transform: translate(3px, 4px); }
+    -webkit-transform: translate(1px, 2px);
+    -moz-transform: translate(1px, 2px);
+    -ms-transform: translate(1px, 2px);
+    -o-transform: translate(1px, 2px);
+    transform: translate(1px, 2px); }
   0% {
-    -webkit-transform: translate(-5px, -2px);
-    -moz-transform: translate(-5px, -2px);
-    -ms-transform: translate(-5px, -2px);
-    -o-transform: translate(-5px, -2px);
-    transform: translate(-5px, -2px); } }
+    -webkit-transform: translate(-1px, -2px);
+    -moz-transform: translate(-1px, -2px);
+    -ms-transform: translate(-1px, -2px);
+    -o-transform: translate(-1px, -2px);
+    transform: translate(-1px, -2px); } }
 
 @keyframes bubblebubble {
   50% {
@@ -554,11 +554,10 @@ a {
 * {
   box-sizing: border-box; }
 
-html {
-  background-color: #f4f4f4; }
-
 html, body {
-  height: 100%; }
+  background-color: #f4f4f4;
+  height: 100%;
+  font-size: 12px; }
 
 h1 {
   font-family: "Helvetica", Helvetica, Arial, sans-serif;
@@ -582,35 +581,61 @@ h2 {
   padding: 5px 0;
   margin: 0; }
 
-.mug {
-  width: 100px;
-  height: 120px;
+a {
   position: relative;
-  margin: 20px auto;
+  text-decoration: none;
+  color: inherit; }
+
+.row {
+  max-width: 80rem;
+  margin: 0 auto; }
+
+.col-12, .col-10, .col-6, .col-4, .col-3 {
+  display: inline-block; }
+
+.col-12 {
+  width: 100%; }
+
+.col-10 {
+  width: 83.3%; }
+
+.col-6 {
+  width: 50%; }
+
+.col-4 {
+  width: 33.3%; }
+
+.col-3 {
+  width: 25%; }
+
+.mug {
+  width: 60px;
+  height: 70px;
+  position: relative;
   overflow: visible; }
   .mug .handle {
-    width: 20px;
-    height: 55px;
+    width: 11.2px;
+    height: 35px;
     position: absolute;
-    top: 20px;
+    top: 14px;
     left: 105%;
-    border-top-right-radius: 15px;
-    border-bottom-right-radius: 15px;
-    border-top: 8px solid rgba(47, 47, 47, 0.98);
-    border-right: 8px solid rgba(47, 47, 47, 0.98);
-    border-bottom: 8px solid rgba(47, 47, 47, 0.98); }
+    border-top-right-radius: 9px;
+    border-bottom-right-radius: 9px;
+    border-top: 4.8px solid rgba(47, 47, 47, 0.98);
+    border-right: 4.8px solid rgba(47, 47, 47, 0.98);
+    border-bottom: 4.8px solid rgba(47, 47, 47, 0.98); }
   .mug .body {
     width: 100%;
     height: 100%;
     background-color: rgba(47, 47, 47, 0.98);
-    border: 5px solid transparent;
+    border: 3px solid transparent;
     position: absolute;
     left: 0;
     bottom: 0;
-    margin-left: -5px;
-    margin-bottom: -5px;
+    margin-left: -3px;
+    margin-bottom: -3px;
     overflow: hidden;
-    border-radius: 3px 3px 30px 30px;
+    border-radius: 1.8px 1.8px 18px 18px;
     box-sizing: content-box; }
   .mug .contents {
     width: 100%;
@@ -620,123 +645,152 @@ h2 {
     bottom: 0;
     left: 0;
     z-index: 1;
-    border-bottom-left-radius: 25px;
-    border-bottom-right-radius: 25px; }
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px; }
     .mug .contents .fizz {
       position: absolute;
-      margin-top: -45px;
-      margin-left: 6px; }
+      margin-top: -10.5px;
+      margin-left: 3.6px; }
       .mug .contents .fizz div {
-        width: 8px;
-        height: 8px;
-        border-radius: 4px;
+        width: 4.8px;
+        height: 4.8px;
+        border-radius: 2.4px;
         position: absolute;
-        margin-top: 130px;
-        border: 2px solid white;
+        margin-top: 60px;
+        border: 1.2px solid white;
         opacity: 0; }
   .mug .contents .fizz div:nth-of-type(1) {
-    margin-left: 4px;
+    margin-left: 2.4px;
     animation: bubblebubble 3.5s linear 0.5s infinite normal forwards;
     -webkit-animation: bubblebubble 3.5s linear 0.5s infinite normal forwards; }
   .mug .contents .fizz div:nth-of-type(2) {
-    margin-left: 13px;
+    margin-left: 7.8px;
     animation: bubblebubble 3.45s linear 0s infinite normal forwards;
     -webkit-animation: bubblebubble 3.45s linear 0s infinite normal forwards; }
   .mug .contents .fizz div:nth-of-type(3) {
-    margin-left: 22px;
+    margin-left: 13.2px;
     animation: bubblebubble 3.35s linear 0.8s infinite normal forwards;
     -webkit-animation: bubblebubble 3.35s linear 0.8s infinite normal forwards; }
   .mug .contents .fizz div:nth-of-type(4) {
-    margin-left: 30px;
+    margin-left: 18px;
     animation: bubblebubble 3.45s linear 0.5s infinite normal forwards;
     -webkit-animation: bubblebubble 3.45s linear 0.5s infinite normal forwards; }
   .mug .contents .fizz div:nth-of-type(5) {
-    margin-left: 39px;
+    margin-left: 23.4px;
     animation: bubblebubble 3.5s linear 2s infinite normal forwards;
     -webkit-animation: bubblebubble 3.5s linear 2s infinite normal forwards; }
   .mug .contents .fizz div:nth-of-type(6) {
-    margin-left: 47px;
+    margin-left: 28.2px;
     animation: bubblebubble 2.6s linear 0.5s infinite normal forwards;
     -webkit-animation: bubblebubble 2.6s linear 0.5s infinite normal forwards; }
   .mug .contents .fizz div:nth-of-type(7) {
-    margin-left: 55px;
+    margin-left: 33px;
     animation: bubblebubble 2.5s linear 1.5s infinite normal forwards;
     -webkit-animation: bubblebubble 2.5s linear 1.5s infinite normal forwards; }
   .mug .contents .foam {
     width: 100%;
-    height: 35px;
+    height: 20.3px;
     overflow: hidden;
     position: absolute;
     top: 0;
-    margin-top: -35px;
+    margin-top: -20.3px;
     left: 0;
     opacity: 1; }
   .mug .contents .foam div {
     background-color: #F9DF8A;
     position: absolute;
-    border-radius: 25px;
-    width: 30px;
-    height: 30px; }
+    border-radius: 15px;
+    width: 18px;
+    height: 18px; }
   .mug .contents .foam div:nth-of-type(even) {
-    left: -15px;
-    top: 10px;
-    width: 40px;
-    height: 40px; }
+    left: -9px;
+    top: 6px;
+    width: 24px;
+    height: 24px; }
   .mug .contents .foam div:nth-of-type(odd) {
-    left: -5px;
+    left: -3px;
     top: 0; }
   .mug .contents .foam div:nth-of-type(5n+1) {
-    margin-left: 0%;
-    margin-top: 15px;
+    margin-left: 0;
+    margin-top: 9px;
     animation: bubble 6.5s ease-in-out 0.2s infinite alternate none;
     -webkit-animation: bubble 6.5s ease-in-out 0.2s infinite alternate none; }
   .mug .contents .foam div:nth-of-type(5n+2) {
     margin-left: 25%;
-    margin-top: 15px;
+    margin-top: 9px;
     animation: bubble 6.2s ease-in-out 0.1s infinite alternate none;
     -webkit-animation: bubble 6.2s ease-in-out 0.1s infinite alternate none; }
   .mug .contents .foam div:nth-of-type(5n+3) {
     margin-left: 50%;
-    margin-top: 15px;
+    margin-top: 9px;
     animation: bubble 6.5s ease-in-out 0s infinite alternate none;
     -webkit-animation: bubble 6.5s ease-in-out 0s infinite alternate none; }
   .mug .contents .foam div:nth-of-type(5n+4) {
     margin-left: 75%;
-    margin-top: 15px;
+    margin-top: 9px;
     animation: bubble 6.6s ease-in-out 0s infinite alternate none;
     -webkit-animation: bubble 6.6s ease-in-out 0s infinite alternate none; }
   .mug .contents .foam div:nth-of-type(5n+5) {
     margin-left: 100%;
-    margin-top: 15px;
+    margin-top: 9px;
     animation: bubble 6.15s ease-in-out 0.6s infinite alternate none;
     -webkit-animation: bubble 6.15s ease-in-out 0.6s infinite alternate none; }
   .mug .line div {
-    height: 5px;
-    border-radius: 5px;
+    height: 3px;
+    border-radius: 3px;
     background-color: rgba(47, 47, 47, 0.98);
     position: absolute;
     top: 0;
-    margin-top: 120px; }
+    margin-top: 70px; }
   .mug .line div:nth-of-type(1) {
-    margin-left: -35px;
-    width: 15px; }
+    margin-left: -21px;
+    width: 9px; }
   .mug .line div:nth-of-type(2) {
-    margin-left: -10px;
-    width: 140px; }
+    margin-left: -6px;
+    width: 84px; }
+
+header {
+  font-family: "Crimson Text", serif;
+  padding: 1rem 0; }
+  header h1 {
+    font-size: 1.5rem; }
+  header a {
+    color: rgba(47, 47, 47, 0.98);
+    line-height: 3rem;
+    margin: 0 1rem;
+    font-size: 1.5rem; }
+    header a:before {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 2px;
+      bottom: 0;
+      left: 0;
+      background-color: rgba(47, 47, 47, 0.98);
+      visibility: hidden;
+      -webkit-transform: scaleX(0);
+      transform: scaleX(0);
+      -webkit-transition: all 0.3s ease-in-out 0s;
+      transition: all 0.3s ease-in-out 0s; }
+    header a:hover:before {
+      visibility: visible;
+      -webkit-transform: scaleX(1);
+      transform: scaleX(1); }
+
+footer .social {
+  text-align: center;
+  color: rgba(47, 47, 47, 0.98);
+  padding: 2rem 0; }
+  footer .social i {
+    font-size: 2rem;
+    padding: 0 2rem;
+    cursor: pointer; }
+    footer .social i:hover {
+      color: #F6B868; }
 
 .home {
-  position: absolute;
-  top: 50%;
-  left: 0;
-  right: 0;
-  margin: -120px auto 0 auto; }
-  .home .social {
-    text-align: center;
-    color: rgba(47, 47, 47, 0.98);
-    margin-top: 10px; }
-    .home .social i {
-      font-size: 20px;
-      padding: 0 12px;
-      cursor: pointer; }
-      .home .social i:hover {
-        color: #F6B868; }
+  background-color: rgba(47, 47, 47, 0.98); }
+  .home h1 {
+    color: #f4f4f4;
+    padding: 10rem 0;
+    text-align: center; }
